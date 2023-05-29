@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity2"
+    android:background="@drawable/loginbckg">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="345dp"
+        android:layout_height="390dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePhoto_homePageActivity"
+        app:layout_constraintVertical_bias="0.372"
+        tools:context=".LoginActivity">
+
+
+        <EditText
+            android:id="@+id/firstName_register2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/material_on_primary_emphasis_medium"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:hint="First Name"
+            android:padding="8dp"
+            android:textColor="@color/dark_strong_blue"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/lastName_register2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/material_on_primary_emphasis_medium"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:hint="Last Name"
+            android:padding="8dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/dark_strong_blue"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/phone_register2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/material_on_primary_emphasis_medium"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/dark_strong_blue"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/secondaryEmail_register2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/material_on_primary_emphasis_medium"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:hint="Secondary Email (Gmail)"
+            android:padding="8dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/dark_strong_blue"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/next_register2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/dark_blue"
+            android:fontFamily="@font/ubuntu"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+
+    </LinearLayout>
+
+  <com.google.android.material.imageview.ShapeableImageView
+      android:id="@+id/profilePhoto_homePageActivity"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:background="@color/white"
+      android:backgroundTint="@color/material_on_primary_emphasis_medium"
+      android:padding="3dp"
+      android:src="@drawable/baseline_person_24"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.177"
+      app:shapeAppearanceOverlay="@style/circular"
+      app:strokeColor="@color/white"
+      app:strokeWidth="3dp" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/photoSelect_register2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginBottom="8dp"
+          android:clickable="true"
+          android:contentDescription="TODO"
+          android:focusable="true"
+          app:backgroundTint="@color/dark_blue"
+          app:layout_constraintBottom_toBottomOf="@+id/profilePhoto_homePageActivity"
+          app:layout_constraintEnd_toEndOf="@+id/profilePhoto_homePageActivity"
+          app:srcCompat="@drawable/baseline_photo_camera_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

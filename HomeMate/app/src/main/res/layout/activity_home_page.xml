@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity"
+    android:animateLayoutChanges="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/dark_strong_blue"
+            app:cardCornerRadius="350dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.835">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/list_homePageActivity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/dark_strong_blue"
+                android:padding="1dp"
+                android:src="@drawable/baseline_search_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.961" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/dark_strong_blue"
+            app:cardCornerRadius="350dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/requests_homePageActivity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/dark_strong_blue"
+                android:padding="1dp"
+                android:src="@drawable/baseline_notifications_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.961" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/dark_strong_blue"
+            app:cardCornerRadius="350dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.734">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_homePageActivity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/dark_strong_blue"
+                android:padding="1dp"
+                android:src="@drawable/baseline_menu_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.961" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/littleCard"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/dark_strong_blue"
+            app:cardCornerRadius="350dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/littlePp_homePageActivity"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/dark_strong_blue"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.961" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filterCard"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_strong_blue"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                    android:drawablePadding="8dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:hint="FILTER OPTIONS"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_strong_blue"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                    android:drawablePadding="8dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:hint="DistanceTo Campus"
+                    android:padding="2dp"
+                    android:textColor="@color/dark_strong_blue"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <SeekBar
+                        android:id="@+id/distance_filter"
+                        android:layout_width="225dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/custom_edittext"
+                        android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                        android:max="100"
+                        android:thumb="@drawable/custom_thumb" />
+
+                    <TextView
+                        android:id="@+id/disatanceText_filter"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/custom_edittext"
+                        android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_strong_blue"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                    android:drawablePadding="8dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:hint="Max Stay Duration"
+                    android:padding="2dp"
+                    android:textColor="@color/dark_strong_blue"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textSize="20sp" />
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/day_filter"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/custom_edittext"
+                        android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        tools:ignore="InvalidId" />
+
+                    <Spinner
+                        android:id="@+id/time_filter"
+                        android:layout_width="205dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/custom_edittext"
+                        android:backgroundTint="@color/material_on_primary_emphasis_medium" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/filter"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="225dp"
+                    android:text="FILTER"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="15dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bigCard"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_strong_blue"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePhoto_homePageActivity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                android:padding="3dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <EditText
+                android:id="@+id/name_HomePageActivity"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                android:fontFamily="@font/ubuntu_light"
+                android:textAlignment="center"
+                android:textColor="@color/dark_strong_blue"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/settings_homePageActivity"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                android:src="@drawable/baseline_settings_24" />
+
+            <LinearLayout
+                android:id="@+id/settingsCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/profileSettings_homePageActivity"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Profile Settings"
+                    android:textAllCaps="false"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium" />
+
+                <Button
+                    android:id="@+id/educationSettings_homePageActivity"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                    android:text="Education Settings"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/lookingSettings_homePageActivity"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+                    android:text="Looking Settings"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/moreCard"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginStart="55dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/map"
+            app:layout_constraintStart_toStartOf="@+id/littleCard"
+            app:layout_constraintTop_toTopOf="@+id/littleCard"
+            app:layout_constraintVertical_bias="0.07">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/moreIcon_HomePageActivity"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/dark_strong_blue"
+                android:padding="1dp"
+                android:src="@drawable/more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.961" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

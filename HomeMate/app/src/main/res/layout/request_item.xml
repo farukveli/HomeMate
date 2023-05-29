@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:elevation="50dp"
+    android:layout_marginHorizontal="14dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/custom_edittext"
+    android:backgroundTint="@color/material_on_primary_emphasis_medium"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/request_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@color/white"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <TextView
+                android:id="@+id/request_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faruk Veli"
+                android:fontFamily="@font/ubuntu_light"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:text="Are you accepting?"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/acceptButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/accept">
+                </ImageButton>
+                <ImageButton
+                    android:id="@+id/declineButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/remove">
+                </ImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="74dp"
+                    android:text="Contact:"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <ImageButton
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imButWp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whatsapp">
+                </ImageButton>
+                <ImageButton
+                    android:id="@+id/imButMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gmail">
+                </ImageButton>
+            </LinearLayout>
+            <Button
+                android:id="@+id/viewProfile"
+                android:layout_width="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="match_parent"
+                android:text="View Profile"
+                android:textSize="15sp"
+                android:fontFamily="@font/ubuntu_light"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_strong_blue"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/loginbckg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="322dp"
+        android:layout_height="79dp"
+        android:fontFamily="@font/ubuntu"
+        android:padding="8dp"
+        android:text="HomeMate"
+        android:textAlignment="textStart"
+        android:textColor="@color/golden_rod"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="342dp"
+        android:layout_height="356dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        tools:context=".LoginActivity">
+
+
+        <EditText
+            android:id="@+id/email_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/material_on_primary_emphasis_medium"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:hint="Email"
+            android:padding="8dp"
+            android:textColor="@color/dark_strong_blue"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/material_on_primary_emphasis_medium"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/dark_strong_blue"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/dark_blue"
+            android:fontFamily="@font/ubuntu"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/light_gold"
+            android:textSize="18sp"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/forgot_login"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/ubuntu"
+            android:padding="5dp"
+            android:text="Forgot Password"
+            android:textAlignment="center"
+            android:textColor="@color/golden_rod">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ytu_logo"
+        android:layout_width="137dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324"
+        app:srcCompat="@drawable/yeni_logo" />
+
+    <TextView
+        android:id="@+id/register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:padding="8dp"
+        android:text="Not registered? Register Now"
+        android:textAlignment="center"
+        android:textColor="@color/golden_rod"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

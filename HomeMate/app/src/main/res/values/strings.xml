@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">HomeMate</string>
+
+    <string-array name="FacultyList">
+        <item>Education</item>
+        <item>Electrical and Electronics</item>
+        <item>Art and Science</item>
+        <item>Naval Architecture and Maritime</item>
+        <item>Economic and Administrative Sciences</item>
+        <item>Civil Engineering</item>
+        <item>Chemical and Metallurgical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Architecture</item>
+        <item>Art and Design</item>
+        <item>Applied Sciences</item>
+    </string-array>
+
+    <string-array name="Education">
+        <item>Computer Education and Instructional Technology</item>
+        <item>Educational Sciences</item>
+        <item>Mathematics and Science Education</item>
+        <item>Primary Education</item>
+        <item>Turkish Language and Social Sciences Education</item>
+        <item>Foreign Languages Education</item>
+    </string-array>
+
+    <string-array name="ElectricalandElectronics">
+        <item>Computer Engineering</item>
+        <item>Biomedical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics and Communications Engineering</item>
+        <item>Control and Automation Engineering</item>
+    </string-array>
+
+    <string-array name="ArtandScience">
+        <item>Western Languages and Literatures</item>
+        <item>Physics</item>
+        <item>Statistics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Molecular Biology and Genetics</item>
+        <item>Turkish Language and Literature</item>
+    </string-array>
+
+    <string-array name="NavalArchitectureandMaritime">
+        <item>Naval Architecture and Marine Engineering</item>
+        <item>Marine Engineering</item>
+    </string-array>
+
+    <string-array name="EconomicandAdministrativeSciences">
+        <item>Economics</item>
+        <item>Business Administration</item>
+        <item>Political Science and International Relations</item>
+    </string-array>
+
+    <string-array name="CivilEngineering">
+        <item>Environmental Engineering</item>
+        <item>Geomatic Engineering</item>
+        <item>Civil Engineering</item>
+    </string-array>
+
+    <string-array name="ChemicalandMetallurgicalEngineering">
+        <item>Bioengineering</item>
+        <item>Food Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Mathematical Engineering</item>
+        <item>Metallurgical and Materials Engineering</item>
+    </string-array>
+
+    <string-array name="MechanicalEngineering">
+        <item>Industrial Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Mechatronics Engineering</item>
+    </string-array>
+
+    <string-array name="Architecture">
+        <item>Conservation and Restoration of Cultural Property</item>
+        <item>Architecture</item>
+        <item>Urban and Regional Planning</item>
+    </string-array>
+
+    <string-array name="ArtandDesign">
+        <item>Communication and Design</item>
+        <item>Music and Performing Arts</item>
+        <item>Art</item>
+    </string-array>
+
+    <string-array name="AppliedSciences">
+        <item>Aviation Electronics</item>
+    </string-array>
+    <string name="title_activity_home_page">HomePageActivity</string>
+
+</resources>
